@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: gold;
+    margin: 0;
+}
+header {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+    color: gold;
+    background-color:purple;
+    text-align: center;
+   
+    padding:16px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header a {
+    color: gold;
+    text-decoration: none;
+}
+header a:hover {
+    color: cyan;
+}
+main {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 800;
+  font-style: normal;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+nav a {
+    background: linear-gradient(
+    135deg,
+    black,
+    purple,
+    black
+);
+    color: gold;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid gold;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+nav a:hover {
+    color: cyan;
+    transform: scale(1.05);
+}
+nav a:active {
+    color: red;
+}
+.Content-Blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+.Content-Blocks > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px;
+    border-radius: 12px;
+}
+.Content-Blocks > section.Content-Block {
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #332400,
+        #000000
+    );
+
+    border: 2px solid gold;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+}
+.Content-Blocks > section.Content-Block1,
+.Content-Blocks > section.Content-Block2 {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.Content-Blocks > section h2,
+.Content-Blocks > section h3,
+.Content-Blocks > section h4 {
+    width: 100%;
+    margin: 0 0 18px;
+    text-align: center;
+    color: gold;
+    font-size: 1.6rem;
+}
+.Content-Blocks > section img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    margin: 0 auto 18px;
+
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+}
+.Content-Blocks > section p,
+.Content-Blocks > section ul {
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.7;
+    text-align: left;
+}
+.Content-Blocks > section ul {
+    padding-left: 25px;
+}
+#playersHelped {
+    color:gold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+.Quote-Box {
+    width: 80%;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 20px;
+
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #4b0082,
+        #000000
+    );
+    border: 2px solid #a020f0;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(160, 32, 240, 0.5);
+}
+.Quote-Box h2 {
+    color: gold;
+}
+
+#quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    min-height: 55px;
+}
+
+#quoteButton {
+    padding: 12px 20px;
+    color: gold;
+    background: black;
+    border: 2px solid gold;
+    border-radius: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#quoteButton:hover {
+    color: cyan;
+    transform: scale(1.05);
+}
+body {
+cursor: none;
+}
+#customCursor {
+transform: translate(-50%, -50%);
+position: fixed;
+width: 44px;
+height: 44px;
+pointer-events: none;
+z-index: 9999;
+}
+#cursorImage {
+width: 44px;
+height: 44px;
+object-fit: contain;
+}
+.Question-Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.Answer-Buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.Answer-Buttons button {
+  padding: 12px 20px;
+    color: gold;
+    background: black;
+    border: 2px solid gold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.logo-link {
+    display: block;
+    width: 100%;
+}
+
+.site-logo {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.site-logo:hover {
+    transform: scale(1.03);
+}
+.character-sheet {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 20px 0 20px auto;
+}
